@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../logo.png'
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap'
 
 const Header = () => {
@@ -6,7 +7,9 @@ const Header = () => {
     <header>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
-          <Navbar.Brand href='/'>KSA</Navbar.Brand>
+          <Navbar.Brand href='/'>
+            <img src={logo} alt='KSA' />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
