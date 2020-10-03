@@ -1,0 +1,22 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "ECommerce-website built with MERN",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiuSRoy/KSA_Digital_Showroom.git"
+  },
+  "author": "Aishwariya Singha Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiuSRoy/KSA_Digital_Showroom/issues"
+  },
+  "homepage": "https://github.com/RiuSRoy/KSA_Digital_Showroom#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
