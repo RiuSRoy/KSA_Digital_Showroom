@@ -2,6 +2,10 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import productRouter from './routes/productRouter.js'
+import {
+  notFound,
+  errorHandler,
+} from '../backend/middleware/errorMiddleware.js'
 
 dotenv.config()
 
@@ -16,6 +20,10 @@ app.get('/', (req, res) => {
 app.use('/api/products', productRouter)
 
 app.use('/api/products/:id', productRouter)
+
+app.use(notFound)
+
+app.use(errorHandler)
 
 app.listen(
   5000,
